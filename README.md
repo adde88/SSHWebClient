@@ -1,18 +1,16 @@
-# SSHWebClient
-Simple SSH Web Client for your Wifi Pineapple
+# SSHWebClient - Pineapple Module
+Simple SSH Web Client Module for your WiFi Pineapple!
+
+# This is a fork of the original developers work, it's also in development.
+I made this because the original developer contacted me and reported some issues with the project.
+I've uploaded my correct process on the module, so people can take a look at it before it's complete.
+There are known issues at the moment, but it's being worked on and should be fixed shortly.
+
+# todo:
+- Fix the interface stuff, or make it always use the correct ip-address in the iframes.
+- Look into a security issue that might exist because of iframes.
+- Create a toggle for enabling/disabling the shellinaboxd service at boot-time.
+- Look into ptroblems reported when using this on either nano or tetra.
 
 # Thanks to:
-<strong>L0rd-Kam0S</strong> for updating the install script. Thanks to <strong>Zylla</strong> for compiling the Shellinabox. Can't forget <strong>Kbeflo</strong> for pointing me in the right direction. Cheers!
-
-<strong>NOTE:</strong> Make sure you're Nano/Tetra has <strong>Internet Sharing</strong> setup or have the <strong>WiFi Client Mode</strong> connected to the Internet.
-
-<strong>WARNING:</strong> At this moment you can only install this to your local device. A message has been sent to Zylla to look into fixing installation onto the SD Card. Will update soon as its fixed. Cheers!
-
-# Manual SSH Installation
-Step 1. Connect to your Device via SSH<br>
-Step 2. Once Logged in Type "wget https://raw.githubusercontent.com/Ei8htbits/SSHWebClient/master/install.sh"<br>
-Step 3. Type "Chmod +x install.sh"<br>
-Step 4. Type "./install.sh"<br>
-Step 5. Choose option 2 to install the Module locally into the device<br>
-Step 6. Choose option 2 to install Shell in a Box locally into the device<br>
-Done!!!
+<strong>Ei8htbits</strong> for initially creating the module, and coming up with the idèa of this module.
