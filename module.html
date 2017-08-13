@@ -85,11 +85,11 @@ function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=6
     </div>
     <div class="row panel-body">
 		<div class="col-md-11">
-			<button type="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 1</a>
-			<button type="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 2</button>
-			<button type="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 3</button>
-			<button type="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 4</button>
-			<button type="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 5</button>
+			<a href="http://{{ipaddress}}:4200" role="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 1</a>
+			<a href="http://{{ipaddress}}:4200" role="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 2</a>
+			<a href="http://{{ipaddress}}:4200" role="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 3</a>
+			<a href="http://{{ipaddress}}:4200" role="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 4</a>
+			<a href="http://{{ipaddress}}:4200" role="button" onclick="openwindow(this.href); return false;" class="btn btn-primary btn-xs">Term 5</a>
 		</div>
 		<div class="col-md-1">
 			<button type="button" onClick="history.go(0)" class="btn btn-success btn-xs round">Refresh</button>
@@ -97,7 +97,7 @@ function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=6
 	</div>
 	<div class="container">
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://192.168.1.6:4200/"></iframe>
+            <iframe class="embed-responsive-item" src="http://172.16.42.1:4200/"></iframe>
         </div>
 	</div>
 </div>
