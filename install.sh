@@ -33,6 +33,6 @@ else
 fi
 # Cleanup
 cd /tmp
-rm "$sshwc".*
+rm /tmp/shellinabox*
 echo -e "${RED}SSHWebClient Installation completed!"
 exit 0
