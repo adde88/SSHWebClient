@@ -22,6 +22,7 @@ wget "$SSHWC"
 # This will only happen on the Pineapple NANO.
 if [ -e /sd ]; then
 	opkg --dest sd install git git-http "$sshwc"
+	mkdir -p /sd/modules
 	cd /sd/modules
 	git clone "$MODULE"
 	ln -s /sd/modules/SSHWebClient /pineapple/modules/SSHWebClient
