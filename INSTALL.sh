@@ -2,7 +2,7 @@
 #
 # Installation script for SSHWebClient, for the Pineapple NANO and TETRA (OpenWRT)
 # Written by: Andreas Nilsen - adde88@gmail.com - https://www.github.com/adde88
-#
+# 16 April 2019
 # Starting SSHWebClient Install.
 #
 mkdir -p /tmp/ShellinaBox
