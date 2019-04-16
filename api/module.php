@@ -11,20 +11,20 @@ class SSHWebClient extends Module
 				$this->refreshInfo();
 				break;
 			case 'refreshStatus':
-                $this->refreshStatus();
-                break;
-            case 'handleDependencies':
-                $this->handleDependencies();
-                break;
-            case 'handleDependenciesStatus':
-                $this->handleDependenciesStatus();
-                break;
+		                $this->refreshStatus();
+                		break;
+	        	case 'handleDependencies':
+        		        $this->handleDependencies();
+		                break;
+		        case 'handleDependenciesStatus':
+		                $this->handleDependenciesStatus();
+                		break;
 			case 'getIpaddress':
-                $this->getIpaddress();
-                break;
+		                $this->getIpaddress();
+                		break;
 			case 'getDevice':
-                $this->getDevice();
-                break;
+		                $this->getDevice();
+		                break;
         }
     }
 
@@ -73,7 +73,8 @@ class SSHWebClient extends Module
     private function getIpaddress()
     {
 		$kake = trim(exec("ifconfig br-lan 2>/dev/null|awk '/inet addr:/ {print $2}'|sed 's/addr://'"));
-		$this->response = array('ipaddress' => $kake);
+		$kake2 = trim(exec("ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"));
+		$this->response = array('ipaddress' => $kake2);
     }
 
     private function refreshStatus()

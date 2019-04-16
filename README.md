@@ -10,7 +10,7 @@ There are known issues at the moment, but it's being worked on and should be fix
 - Fix the interface stuff, or make it always use the correct ip-address in the iframes.
 - Look into a security issue that might exist because of iframes.
 - Create a toggle for enabling/disabling the shellinaboxd service at boot-time.
-- Look into ptroblems reported when using this on either nano or tetra.
+- Look into problems reported when using this on the Pineapples.
 
 # Thanks to:
 <strong>Ei8htbits</strong> for initially creating the module, and coming up with the idèa of this module.

@@ -80,9 +80,9 @@ registerController('SSHWebClient_ControlsController', ['$api', '$scope', '$rootS
 
 registerController('SSHWebClient_InterfaceController', ['$api', '$scope', '$rootScope', '$interval', function($api, $scope, $rootScope, $interval) {
 	$scope.device = '';
-	$scope.ipaddress = '172.16.42.1';
+	$scope.ipaddress = '0.0.0.0';
 	
-    $scope.getIpaddress = (function() {
+	$scope.getIpaddress = (function() {
 		$api.request({
             module: 'SSHWebClient',
             action: 'getIpaddress'

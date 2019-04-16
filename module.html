@@ -1,5 +1,5 @@
 <script type="text/javascript"> 
-function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=600,left=20,top=20,toolbar=No,location=No,addressbar=no,scrollbars=no,status=No,resizable=no,fullscreen=No');  NewWindow.focus(); void(0); }
+	function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=600,left=20,top=20,toolbar=No,location=No,addressbar=no,scrollbars=no,status=No,resizable=no,fullscreen=No');  NewWindow.focus(); void(0); }
 </script>
 
 <div class="panel panel-default" ng-controller="SSHWebClient_Controller">
@@ -79,7 +79,7 @@ function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=6
     </div>
 </div>
 
-<div class="panel panel-default" ng-controller="SSHWebClient_InterfaceController">
+<div class="panel panel-default" ng-show="$root.status.installed" ng-controller="SSHWebClient_InterfaceController">
 	<div class="panel-heading">
         <h4 class="panel-title">SSH Interface</h4>
     </div>
@@ -97,7 +97,7 @@ function openwindow(url){ NewWindow=window.open(url,'newWin','width=900,height=6
 	</div>
 	<div class="container">
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://172.16.42.1:4200/"></iframe>
+            <iframe class="embed-responsive-item" src="http://192.168.1.6:4200/"></iframe>
         </div>
 	</div>
 </div>
